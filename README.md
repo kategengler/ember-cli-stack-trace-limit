@@ -1,26 +1,40 @@
-# Ember-cli-stack-trace-limit
+# ember-cli-stack-trace-limit
+<!--[![Build Status](https://travis-ci.org/kategengler/ember-cli-stack-trace.svg?branch=master)](https://travis-ci.org/kategengler/ember-cli-stack-trace-limit) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-stack-trace-limit.svg)](http://emberobserver.com/addons/ember-cli-stack-trace-limit)-->
 
-This README outlines the details of collaborating on this Ember addon.
+An ember-cli addon to set `Error.stackTraceLimit` early.  
 
-## Installation
+### Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+ember install ember-cli-stack-trace-limit
+```
 
-## Running
+### Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+By default, this addon sets `Error.stackTraceLimit` to 100 in development and test environments. 
+This number can be overridden with this `stackTraceLimit` configuration property.
+It can be enabled in other environments by configuring `stackTraceLimit` for those environments.
 
-## Running Tests
+### Configuration
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+#### `ENV.stackTraceLimit`
 
-## Building
+You can configure the limit in your project's `config/environment.js` file. This
+is an easy way to change settings for a given environment. For example:
 
-* `ember build`
+```javascript
+// config/environment.js
+module.exports = function(environment) {
+  var ENV = { };
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+  if (environment === 'test') {
+    ENV.stackTraceLimit = 30;
+  }
+  
+  if (environment === 'development') {
+    ENV.stackTraceLimit = 120;
+  }
+
+  return ENV;
+};
+```
