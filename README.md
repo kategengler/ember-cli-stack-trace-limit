@@ -1,5 +1,5 @@
 # ember-cli-stack-trace-limit
-<!--[![Build Status](https://travis-ci.org/kategengler/ember-cli-stack-trace.svg?branch=master)](https://travis-ci.org/kategengler/ember-cli-stack-trace-limit) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-stack-trace-limit.svg)](http://emberobserver.com/addons/ember-cli-stack-trace-limit)-->
+[![Build Status](https://travis-ci.org/kategengler/ember-cli-stack-trace-limit.svg?branch=master)](https://travis-ci.org/kategengler/ember-cli-stack-trace-limit) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-stack-trace-limit.svg)](http://emberobserver.com/addons/ember-cli-stack-trace-limit)
 
 An ember-cli addon to set `Error.stackTraceLimit` early.  
 
