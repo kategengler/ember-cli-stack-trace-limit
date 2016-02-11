@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-stack-trace-limit",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Set Error.stackTraceLimit higher before everything else runs.",
   "directories": {
     "doc": "doc",
     "test": "tests"
