@@ -1973,9 +1973,9 @@ ember-cli-qunit@^4.3.2:
     ember-cli-babel "^6.11.0"
     ember-qunit "^3.3.2"
 
-ember-cli-release@0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/ember-cli-release/-/ember-cli-release-0.2.8.tgz#e9fddd06058c0f3bc2ea57ab2667e9611f8fb205"
+ember-cli-release@0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/ember-cli-release/-/ember-cli-release-0.2.9.tgz#5e8de3d034c65597933748023058470ec1231adb"
   dependencies:
     chalk "^1.0.0"
     git-tools "^0.1.4"
