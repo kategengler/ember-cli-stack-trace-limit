@@ -1,6 +1,5 @@
-/* jshint node: true */
 'use strict';
-var contentForHead = require('./lib/content-for-head');
+const contentForHead = require('./lib/content-for-head');
 
 module.exports = {
   name: 'ember-cli-stack-trace-limit',
