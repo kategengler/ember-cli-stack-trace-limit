@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-stack-trace-limit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Set Error.stackTraceLimit higher before everything else runs.",
   "keywords": [
     "ember-addon"
